@@ -37,3 +37,16 @@ void setMovingSide(Board *board, char side)
 	board->moving_side = side;
 }
 
+void freeBoard(Board *board)
+{
+
+	for (int i = 0; i < 8; i++)
+	{
+		free(board->board[i]);
+	}
+
+	free(board->board);
+	free(board);
+
+}
+

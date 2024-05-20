@@ -19,5 +19,6 @@ typedef struct Board
 Board createBoard();
 void setBoard(Board *board, char copy[8][8]);
 void setMovingSide(Board *board, char side);
+void freeBoard(Board *board);
 
 #endif

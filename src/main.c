@@ -43,6 +43,8 @@ int main(int argc, char **argv)
 	setBoard(&board, board_copy);
 	setMovingSide(&board, argv[2][0]); 
 	
+	
+
 	return 0;
 
 }
