@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <string.h>
 #include "board.h"
+#include "stack.h"
 
 int main(int argc, char **argv)
 {
 	
 	FILE *board_file;
-	char board_name[30] = "../board/";	
+	char board_name[30] = "./board/";	
 	char board_copy[8][8]; 
 	char line[10];
 
@@ -43,7 +44,8 @@ int main(int argc, char **argv)
 	setBoard(&board, board_copy);
 	setMovingSide(&board, argv[2][0]); 
 	
-	
+	// Testing priority queue
+	Stack fringe = createStack();
 
 	return 0;
 
